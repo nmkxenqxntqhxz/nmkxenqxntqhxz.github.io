@@ -27,17 +27,32 @@
 			align-items: center;
 		}
 
+		header.large span {
+			font-size: 600%;	
+			font-family: monospace;
+		}
+
+
 		header.small {
 			height: 10%;
-			background-color: red;	
+			background-color: #560327;	
 			
 		}
 
-		header, a, img, li{
-			transition: all 2s;
-			-moz-transition: all 2s; /* Firefox 4 */
-			-webkit-transition: all 2s; /* Safari and Chrome */
-			-o-transition: all 2s; /* Opera */
+		header.small span {
+			font-size: 300%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: monospace;
+			color: #ffffff;
+		}
+
+		header, img, span{
+			transition: all 1s;
+			-moz-transition: all 1s; /* Firefox 4 */
+			-webkit-transition: all 1s; /* Safari and Chrome */
+			-o-transition: all 1s; /* Opera */
 		}
 
 		header{
@@ -47,7 +62,7 @@
 			position: fixed;
 			z-index: 10;
 		}
-					section.stretch p.bottom{
+			section.stretch p.bottom{
 				top: 100%;
 			}
 		section.stretch{
@@ -88,7 +103,9 @@
 
 <body>
 	<header class="large">
-		hello
+			<span>	 Yes/No? </span>
+			<br>
+			
 	</header>
 
 	<section class="stretch">

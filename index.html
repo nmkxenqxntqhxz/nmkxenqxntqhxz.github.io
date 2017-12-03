@@ -1,23 +1,106 @@
 <html>
 <head>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<style>
+	/*var screenHeight = window.innerHeight;*/
+
+		body {
+			background-image: url("background2.jpg");
+	 		background-repeat: no-repeat;	
+	 		background-attachment: fixed;
+		}
+
+		header.large {
+			height: 98%;
+			width: 100%;
+			background-color: inherit;
+			
+			margin: auto;
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		header.small {
+			height: 10%;
+			background-color: red;	
+			
+		}
+
+		header, a, img, li{
+			transition: all 2s;
+			-moz-transition: all 2s; /* Firefox 4 */
+			-webkit-transition: all 2s; /* Safari and Chrome */
+			-o-transition: all 2s; /* Opera */
+		}
+
+		header{
+			
+			/*background: #C7C7C7;*/
+			
+			/*float: left;*/
+			width:98%;
+			position: fixed;
+
+			z-index: 10;
+		}
+					section.stretch p.bottom{
+				top: 100%;
+			}
+		section.stretch{
+			float: left;
+			height: 1500px;
+			width: 100%;
+		}
+	</style>
+
+
 	<!--
 	<script type="text/javascript">var whoistrack_params=whoistrack_params||[];whoistrack_params.push(["wait","f42ebadee3e64ec38972dd510cfaec9c"]);var t=document["createElement"]("script"),i;t["type"]="text/javascript";t["src"]=window["location"]["href"]["split"]("/")[0]+"//app.whoisvisiting.com/who.js";i=document["getElementsByTagName"]("script")[0];i["parentNode"]["insertBefore"](t,i);</script>	
 	-->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110588258-1"></script>
-	<script>
+	<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110588258-1">
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	  gtag('config', 'UA-110588258-1');
+	-->
+<script "text/javascript">
+	  $(document).on("scroll",function(){
+			if($(document).scrollTop()>200){ 
+				$("header").removeClass("large").addClass("small");
+				}
+			else{
+				$("header").removeClass("small").addClass("large");
+				}
+			});	
 	</script>
 
 	<title>
 		hello
 	</title>
 </head>
-<body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;" background="background2.jpg">
-	hello world!
+<!--<body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;">-->
+
+<body>
+	<header class="large">
+		Yes/No?	hello
+	</header>
+
+	<section class="stretch">
+				Yes/No?
+	<br><br>
+	Confused, huh? 
+	<p>Let's get that menu small!
+		Yes/No?
+	<br><br>
+	Confused, huh? </p>
+	<p class="bottom">End of the line.</p>
+	</section>
+
+	<!-- image of a down arrow to take down -->
+
 </body>
 </html>

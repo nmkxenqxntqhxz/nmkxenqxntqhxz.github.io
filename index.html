@@ -5,6 +5,7 @@
 	<style>
 	/*var screenHeight = window.innerHeight;*/
 
+
 		body {
 			/*background-image: url("background2.jpg");
 	 		background-repeat: no-repeat;	
@@ -27,9 +28,19 @@
 			align-items: center;
 		}
 
-		header.large span {
+		header.large span.mainspan {
 			font-size: 600%;	
 			font-family: monospace;
+		}
+
+		header.large img.arrow1 {
+			height: 10%;
+			padding-left: 30%;
+		}
+
+		header.large span.span2 {
+			font-size: 400%;	
+			font-family: monospace;	
 		}
 
 
@@ -39,14 +50,21 @@
 			
 		}
 
-		header.small span {
-			padding-top: 1%;
+		header.small span.mainspan{
 			font-size: 300%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			font-family: monospace;
 			color: #ffffff;
+		}
+
+		header.small img.arrow1 {
+			height: 0%;
+		}
+
+		header.small span.span2 {
+			font-size: 0%;
 		}
 
 		header, img, span{
@@ -68,8 +86,12 @@
 			}
 		section.stretch{
 			float: left;
-			height: 1500px;
+			height: 120%;
 			width: 100%;
+		}
+
+		.pagebreak {
+			page-break-before: always;
 		}
 	</style>
 
@@ -85,7 +107,7 @@
 	  gtag('js', new Date());
 	  gtag('config', 'UA-110588258-1');
 	-->
-<script "text/javascript">
+	<script "text/javascript">
 	  $(document).on("scroll",function(){
 			if($(document).scrollTop()>100){ 
 				$("header").removeClass("large").addClass("small");
@@ -104,23 +126,23 @@
 
 <body>
 	<header class="large">
-			<span>	 Yes/No? </span>
-			<br>
-			
+		<p>
+			<span class="mainspan">	 Yes/No? </span>
+			<br><br><br><br><br>
+			<span class="span2">Confused, huh?
+				<br><br>
+				<img class="arrow1" src="arrow.png">
+		</span>
+		</p>	
 	</header>
-
-	<section class="stretch">
-				<!-- Yes/No -->
-	<br><br>
-	Confused, huh? 
-	<p>Let's get that menu small!
-		Yes/No?
-	<br><br>
-	Confused, huh? </p>
-	<p class="bottom">End of the line.</p>
+		
+  	<section class="stretch">
 	</section>
-
-	<!-- image of a down arrow to take down -->
-
+	<h1> hello </h1>
+	<p>
+		This is the paragraph I am gonna to write as content!.
+		<br><br><br><br><br>
+		hello<br><br><br><br><br>
+	</p>
 </body>
 </html>

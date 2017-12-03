@@ -4,13 +4,7 @@
 	<script type="text/javascript">var whoistrack_params=whoistrack_params||[];whoistrack_params.push(["wait","f42ebadee3e64ec38972dd510cfaec9c"]);var t=document["createElement"]("script"),i;t["type"]="text/javascript";t["src"]=window["location"]["href"]["split"]("/")[0]+"//app.whoisvisiting.com/who.js";i=document["getElementsByTagName"]("script")[0];i["parentNode"]["insertBefore"](t,i);</script>	
 	-->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<?php 
-	  if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-	  $ip=$_SERVER['HTTP_CLIENT_IP'];}
-	  elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-	  $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];} else {
-	  $ip=$_SERVER['REMOTE_ADDR'];}
-	?>
+
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110588258-1"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -26,11 +20,5 @@
 </head>
 <body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;">
 	hello world!
-
-
-
-	<script type='text/javascript'>
- 		_gaq.push(['_setCustomVar', 1, 'IP', '<?=$ip;?>', 1]);
-	</script>
 </body>
 </html>
